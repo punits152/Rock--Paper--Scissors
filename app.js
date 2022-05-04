@@ -6,7 +6,7 @@ const app = express();
 app.use(morgan("dev"));
 
 // game handlers
-const getGameStatus = require("./handlers/gameStartHandler");
+const getGameStatus = require("./gameStartHandler");
 
 app.route("/api/start").get(getGameStatus);
 
